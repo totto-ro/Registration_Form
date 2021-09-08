@@ -2,18 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 </head>
-<body>
-    <h1>
-        Registration Form
-    </h1>
-    <label for="firstName">
-        First Name:
-    </label>
-    <input type="text" id="firstName" name="firstName"/>
-    <br/>
-</body>
+    <body>
+        <form>
+            <h1>
+                    Registration Form
+            </h1>
+            <div>
+                <label for="firstName">
+                    First Name:*
+                </label>
+                <input type="text" id="firstName" name="firstName"/>
+            </div>
+            <div>
+                <label for="lastName">
+                    Last Name:*
+                </label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div>
+                <label for="mailInfo">
+                    Email:*
+                </label>
+                <input type="email" id="mailInfo" name="mailInfo">
+            </div>
+            <div>
+                <label for="userPassword">
+                    Password:*
+                </label>
+                <input type="password" id="userPassword" name="userPassword">
+            </div>
+            <div>
+                <label for="confirmPassword">
+                    Confirm Password:*
+                </label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <div>
+                <label for="birthDay">
+                    Birthday:*
+                </label>
+                <input type="date" id="birthDay" name="birthDay">
+            </div>
+            <div>
+                <label>
+                    Gender Identity:
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="genderId" id="male" value="maleId"/>
+                <label for="male">
+                    Male
+                </label>
+                <input type="radio" name="genderId" id="female" value="femaleId"/>
+                <label for="female">
+                    Femele
+                </label>
+                <input type="radio" name="genderId" id="nonBinary" value="noBinaryId"/>
+                <label for="nonBinary">
+                    Non-binary
+                </label>
+                <input type="radio" name="genderId" id="noAnswer" value="noId"/>
+                <label for="noAnswer">
+                    I prefer not to answer
+                </label>
+            </div>
+            <div>
+                <label>
+                    A short description about myself:
+                </label>
+                <br/>
+                <textarea name="comment" cols="40" rows="5" placeholder="Add an interesting fact"></textarea>
+            </div>
+            <div>
+                <label for="favLang">
+                    Favorite Language:
+                </label>
+                <select name="favLang" id="favLang">
+                    <option value="0"> 
+                        CSS
+                    </option>
+                    <option value="1"> 
+                        JavaScript
+                    </option>
+                    <option value="2"> 
+                        Python
+                    </option>
+                    <option value="3"> 
+                        HTML
+                    </option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="upDates" id="emailUpDates"/>
+                <label for="emailUpDates">
+                    Yes, I would like to receive periodic email updates
+                </label>
+                <div>
+                    <input type="submit" value="Create Account"/>
+                </div>
+                <footer>* Indicates a required field</footer>
+            </div>
+        </form>
+    </body>
 </html>
