@@ -1,76 +1,108 @@
-
-
+/*
 div{
     padding: 10px;
     border: 1px solid black;
 }
-
-
 .leftSection{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-
-.item{
-    width: 40%;
-}
-
-.item1{
-    flex: 1;
-}
-
-.item2{
-    flex: 2;
-}
-
-.item3{
-    flex: 1;
-}
-
-.rightSection{
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    height: 500px;
-    align-items: center;
+    
+        flex-start (left)
+        center
+        flex-end (right)
+        space-around
+        space-between
+        space-evenly
+    
+    height: 300px;
+    flex: 1;
 }
-
-.mainContainer{
+.item1{
     flex: 1;
     margin-right: 50px;
     align-self: center;
 }
+.item2, .item3{
+    flex: 4;
+}
+.rightSection{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+    flex: 4
+}
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+}
+/*
+    display
+    flex-direction
+    justify-content
+    flex
+    align-items
+    align-self
+*/
 
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-
-
+body{
+    margin: 0;
+}
 
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.logo{
+    margin-right: 50px;
+    vertical-align: center;
+    margin-top: 10px;
 }
 
 .logo > img{
-    width: 40px;
+    width: 55px;
 }
 
-.class{
+.menu{
+    list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: grey;
+}
+
+.menu > li{
+    padding: 10px;
+    color: white;
 }
 
 main{
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid rgba(169, 166, 166, 0.768);
+    padding-bottom: 20px;
 }
 
-footer{
+.product{
+    flex: 1;
+    border: 1px solid rgba(169, 166, 166, 0.768);
+    border-radius: 8px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social{
     display: flex;
     flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
 }
-
-
-
-
