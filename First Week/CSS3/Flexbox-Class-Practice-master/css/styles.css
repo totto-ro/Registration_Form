@@ -1,0 +1,71 @@
+
+
+div{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+.leftSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.item{
+    width: 40%;
+}
+
+.item1{
+    flex: 1;
+}
+
+.item2{
+    flex: 2;
+}
+
+.item3{
+    flex: 1;
+}
+
+.rightSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+    align-items: center;
+}
+
+.mainContainer{
+    flex: 1;
+    margin-right: 50px;
+    align-self: center;
+}
+
+
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo > img{
+    width: 40px;
+}
+
+.class{
+    display: flex;
+}
+
+main{
+    display: flex;
+}
+
+
+
+
+
