@@ -17,3 +17,8 @@ elif(day == 'Friday'):
     print('Woohoo, time for the weekend!')
 else:
     print('Not quite there yet.')
+
+
+x = 9
+y = "hello"
+print (x * y)	
